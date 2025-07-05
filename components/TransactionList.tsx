@@ -22,7 +22,8 @@ export default function TransactionList() {
         method: 'DELETE',
       });
       deleteTransaction(id);
-    } catch (error) {
+    } 
+    catch (error) {
       console.error('Error deleting transaction:', error);
     }
   };

@@ -52,9 +52,12 @@ export default function BudgetManager() {
       setEditingId(null);
       refreshBudgets();
       refreshTransactions(); // Refresh transactions to update charts
-    } catch (error) {
+    } 
+    catch (error) {
+      console.log(error)
       toast.error('Failed to set budget');
-    } finally {
+    } 
+    finally {
       setIsLoading(false);
     }
   };
@@ -65,7 +68,9 @@ export default function BudgetManager() {
       toast.success('Budget removed successfully');
       refreshBudgets();
       refreshTransactions(); // Refresh transactions to update charts
-    } catch (error) {
+    } 
+    catch (error) {
+      console.log(error)
       toast.error('Failed to delete budget');
     }
   };

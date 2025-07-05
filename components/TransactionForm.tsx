@@ -67,9 +67,11 @@ export default function TransactionForm({ initialData, onCancel }: TransactionFo
       refreshBudgets();
 
       if (onCancel) onCancel();
-    } catch (error) {
+    } 
+    catch (error) {
       console.error(`Error ${isEditing ? 'updating' : 'adding'} transaction:`, error);
-    } finally {
+    } 
+    finally {
       setIsLoading(false);
     }
   };
