@@ -88,7 +88,7 @@ export default function SpendingInsights() {
       </CardHeader>
       <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
-          <h3 className="font-medium">This Month's Spending</h3>
+          <h3 className="font-medium">This Month&apos;s Spending</h3>
           <p className="text-2xl font-bold mt-2">
             ${spendingData.monthlyExpenses.toFixed(2)}
           </p>

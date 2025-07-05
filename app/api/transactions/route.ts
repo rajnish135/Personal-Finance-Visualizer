@@ -16,7 +16,9 @@ export async function POST(request: Request) {
     const body = await request.json();
     const transaction = await Transaction.create(body);
     return NextResponse.json(transaction, { status: 201 });
-  } catch (error) {
+  } 
+  catch (error) {
+     console.error(error);
     return NextResponse.json(
       { error: 'Failed to create transaction' },
       { status: 500 }
@@ -34,7 +36,9 @@ export async function PUT(request: Request) {
       { new: true }
     );
     return NextResponse.json(updatedTransaction);
-  } catch (error) {
+  } 
+  catch (error) {
+     console.error(error);
     return NextResponse.json(
       { error: 'Failed to update transaction' },
       { status: 500 }
@@ -49,7 +53,9 @@ export async function DELETE(request: Request) {
     const id = searchParams.get('id');
     await Transaction.findByIdAndDelete(id);
     return NextResponse.json({ message: 'Transaction deleted' });
-  } catch (error) {
+  } 
+  catch (error) {
+     console.error(error);
     return NextResponse.json(
       { error: 'Failed to delete transaction' },
       { status: 500 }

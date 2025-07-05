@@ -1,12 +1,17 @@
 "use client";
 
+interface ChartData {
+  name: string;
+  total: number;
+}
+
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from 'recharts';
 import { useTransactions } from '@/context/TransactionsContext';
 import { useEffect, useState } from 'react';
 
 export default function TransactionChart() {
   const { transactions } = useTransactions();
-  const [chartData, setChartData] = useState<any[]>([]);
+  const [chartData, setChartData] = useState<ChartData[]>([]);
 
   useEffect(() => {
     // Process transactions into chart data format

@@ -3,7 +3,6 @@
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { useEffect, useState } from 'react';
 import type { Transaction } from '@/types';
-import { Button } from '@/components/ui/button';
 import { incomeCategories, expenseCategories } from '@/constants/categories';
 
 export default function RecentTransactions() {

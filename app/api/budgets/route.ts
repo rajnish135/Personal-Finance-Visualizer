@@ -36,6 +36,7 @@ export async function POST(request: Request) {
   } 
   catch (error) 
   {
+     console.error(error);
     return NextResponse.json(
       { error: 'Failed to save budget' },
       { status: 500 }
@@ -53,6 +54,7 @@ export async function DELETE(request: Request) {
     return NextResponse.json({ message: 'Budget deleted successfully' });
   } 
   catch (error) {
+     console.error(error);
     return NextResponse.json(
       { error: 'Failed to delete budget' },
       { status: 500 }
