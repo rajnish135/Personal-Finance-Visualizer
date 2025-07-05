@@ -30,12 +30,16 @@ A simple web application for tracking personal finances with visualization featu
 ## Screenshot
 1
 https://res.cloudinary.com/dhjaboitg/image/upload/v1751735420/Screenshot_2025-07-05_223948_cvi4z6.png
+
 2
 https://res.cloudinary.com/dhjaboitg/image/upload/v1751735720/2_lazv41.png
+
 3
 https://res.cloudinary.com/dhjaboitg/image/upload/v1751735727/3_rsn74a.png
+
 4
 https://res.cloudinary.com/dhjaboitg/image/upload/v1751735765/4_reqdvz.png
+
 5
 https://res.cloudinary.com/dhjaboitg/image/upload/v1751735767/5_gz5fwx.png
 
